@@ -63,7 +63,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Polo React",
       "imgSrc": "/images/polos/polo-react.png",
       "price": 10000,
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Polo React",
       "imgSrc": "/images/polos/polo-react.png",
       "price": 7000,
@@ -87,5 +87,42 @@
       ]
     }
   ],
-  "carts": []
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "items": []
+    }
+  ],
+  "users": [],
+  "orders": [
+    {
+      "id": 1,
+      "userId": null,
+      "items": [
+        {
+          "productId": 1,
+          "name": "Polo React",
+          "price": 2000,
+          "imgSrc": "/images/polos/polo-react.png",
+          "quantity": 2
+        }
+      ],
+      "shippingInfo": {
+        "email": "corcinobrisset@gmail.com",
+        "firstName": "Brisset",
+        "lastName": "corcino",
+        "company": "otro",
+        "address": "Manuel Scorza 191-San Borja",
+        "city": "San Borja",
+        "country": "PE",
+        "region": "Lima",
+        "zipCode": "15201",
+        "phone": "+51922703491"
+      },
+      "total": 4000,
+      "status": "pending",
+      "createdAt": "2026-09-17T18:29:07.387Z"
+    }
+  ]
 }

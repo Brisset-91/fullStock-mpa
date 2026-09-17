@@ -1,28 +1,40 @@
 {
-  "name": "fullstock-mpa",
+  "name": "full-stock-enero-fs-2026",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch app.js",
-    "lint": "eslint",
+    "dev":"tsx watch app.ts",
+    "db:setup": "node --env-file=.env db/setup.ts",
+    "db:seed": "tsx --env-file=.env db/seed.ts",
+    "lint": "eslint .",
     "format": "prettier --write ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Carlos Rodriguez <carlos15erh@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "description": "",
-  "dependencies": {
-    "ejs": "^5.0.2",
-    "express": "^5.2.1",
-    "express-ejs-layouts": "^2.5.1"
-  },
-    "devDependencies": {
+  "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.6",
+    "@types/express-ejs-layouts": "^2.5.4",
+    "@types/node": "^26.2.0",
+    "@types/pg": "^8.23.1",
     "eslint": "^10.2.1",
     "globals": "^17.5.0",
     "prettier": "^3.8.3",
-    "prettier-plugin-ejs": "^1.0.3"
+    "prettier-plugin-ejs": "^1.0.3",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.67.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "pg": "^8.23.0"
   }
-
 }
